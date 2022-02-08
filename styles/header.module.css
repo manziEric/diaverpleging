@@ -1,0 +1,28 @@
+.container {
+  min-height: 100vh;
+  position: relative;
+}
+
+.backgroundImage {
+  background-image: url("../assets/Decore.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  min-height: 60rem;
+  position: absolute;
+  top: -20rem;
+  right: -5rem;
+  left: 0;
+}
+
+.textImage {
+  position: absolute;
+  top: 10rem;
+  left: 5rem;
+  right: 5rem;
+}
+
+@media screen and (max-width: 480px) {
+  .textImage {
+    top: 5rem;
+  }
+}

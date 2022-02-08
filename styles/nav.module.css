@@ -1,0 +1,49 @@
+.container {
+  height: 100px;
+  padding: 0px 50px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.item:nth-child(2) {
+  flex: 3;
+}
+
+.item:last-child {
+  justify-content: flex-end;
+}
+
+.list {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  color: black;
+}
+
+.listItem {
+  margin: 20px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 480px) {
+  /* TODO Hamburger menu on mobile screen */
+  .item:nth-child(2) {
+    display: none;
+  }
+
+  .item:nth-child(1) {
+    flex: 3;
+  }
+}
