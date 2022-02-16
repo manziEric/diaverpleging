@@ -1,12 +1,13 @@
-import React, { createContext, ReactNode } from "react";
+import React, { ReactNode } from "react";
+import styles from "styles/form.module.css";
 
-export const ContactFormContext = createContext<any>(null);
-
-const ContactForm = ({ children }: { children: ReactNode }) => {
+const ContactForm = ({ children }: { children: ReactNode }): JSX.Element => {
   return (
-    <ContactFormContext.Provider value={{}}>
-      {children}
-    </ContactFormContext.Provider>
+    <div className={styles.contactContainer}>
+      <form action="#" className={styles.form}>
+        {children}
+      </form>
+    </div>
   );
 };
 

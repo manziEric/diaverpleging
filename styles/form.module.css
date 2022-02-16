@@ -1,15 +1,68 @@
-.container {
+.contactContainer {
   position: relative;
+  margin-top: 5rem;
 }
+
 .form {
-  /* position: absolute; */
+  margin: auto;
   width: 1252.84px;
   height: 610px;
   left: 1253px;
   top: 20px;
-  background: #ffd4d6;
-  opacity: 0.2;
+  background: rgba(255, 212, 214, 0.3);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 129px 129px 129px 20px;
-  transform: matrix(-1, 0, 0, 1, 0, 0);
+  border-bottom-left-radius: 150px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+  padding: 5rem;
+  margin-bottom: 5rem;
+}
+
+.subscribeForm {
+  margin: auto;
+  width: 1252.84px;
+  height: 410px;
+  left: 1253px;
+  top: 20px;
+  background: rgba(255, 212, 214, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 129px 129px 129px 20px;
+  border-bottom-left-radius: 150px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+  padding: 5rem;
+  margin-bottom: 5rem;
+}
+
+.containerInput,
+.containertextarea {
+  margin-top: 2rem;
+}
+
+.input,
+.textarea {
+  min-width: 30rem;
+  height: 3rem;
+  border-radius: 5px;
+  border: white;
+  padding: 1rem;
+}
+
+.textarea {
+  height: auto;
+}
+
+.containerButton {
+  margin-top: 2rem;
+}
+
+.button {
+  background: #ffc61b;
+  border: none;
+  color: white;
+  min-height: 2.5rem;
+  border-radius: 5px;
+  transform: none;
+  cursor: pointer;
 }

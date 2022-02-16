@@ -3,8 +3,7 @@ import { Layout } from "../src/components/layout";
 import CoreFeature from "../src/components/core-feature/CoreFeature";
 import Header from "../src/components/header";
 import Text from "../src/components/midSection/Tekst";
-import ContactForm from "../src/components/contactForm/ContactForm";
-import Form from "../src/components/contactForm/Form";
+import Form from "../src/components/contactForm/ContactForm";
 import Input from "../src/components/contactForm/Input";
 import Services from "../src/components/services/Services";
 import Card from "../src/components/services/Card";
@@ -13,9 +12,16 @@ import TextSection from "../src/components/service-section/TextSection";
 import Image from "../src/components/service-section/ImageSection";
 import pic1 from "../assets/Image.svg";
 import pic2 from "../assets/Group64.svg";
+import Button from "src/components/button/Button";
+import TextArea from "src/components/contactForm/TextArea";
+import ContactFormHandler from "../src/components/contactForm/ContactFormHandler";
+import ContactForm from "../src/components/contactForm/ContactForm";
+import SubscribeFormHandler from "src/components/subscribe/SubscribeFormHandler";
+import SubscribeForm from "src/components/subscribe/SubscribeForm";
 
 //TODO:[] change all the imports to absolute path
 //TODO:[] remove <br/> from teksts
+//TODO:[] all components of type JSX.Element
 
 const Home: NextPage = () => {
   return (
@@ -24,17 +30,23 @@ const Home: NextPage = () => {
         <Header />
         <CoreFeature />
         <Text />
-        <ContactForm>
-          <Form>
-            <Input type={"text"} name={"name"} />
-            <Input type={"email"} name={"email"} />
-            <Input type={"phone"} name={"phone"} />
-            <Input type={"textArea"} name={"message"} />
-            <Input type={"submit"} name={"submit"} />
-          </Form>
-        </ContactForm>
+        <ContactFormHandler>
+          <ContactForm>
+            <Input type={"text"} name={"name"} placeholder={"Name"} />
+            <Input type={"email"} name={"email"} placeholder={"Email"} />
+            <Input type={"phone"} name={"phone"} placeholder={"Phone"} />
+            <TextArea
+              name={"message"}
+              rows={8}
+              cols={50}
+              placeholder={"Message"}
+            />
+            <Button>Boek je afspraak</Button>
+          </ContactForm>
+        </ContactFormHandler>
         <Services>
           <Card />
+          <Button>Verzenden </Button>
         </Services>
         <ServiceSection>
           <TextSection />
@@ -44,12 +56,12 @@ const Home: NextPage = () => {
           <TextSection />
           <Image src={pic2} alt={"random image"} type={"image/svg"} />
         </ServiceSection>
-        <ContactForm>
-          <Form>
-            <Input type={"email"} name={"email"} />
-            <Input type={"submit"} name={"submit"} />
-          </Form>
-        </ContactForm>
+        <SubscribeFormHandler>
+          <SubscribeForm>
+            <Input type={"email"} name={"email"} placeholder={"Email"} />
+            <Button>Verzenden </Button>
+          </SubscribeForm>
+        </SubscribeFormHandler>
       </main>
     </Layout>
   );
