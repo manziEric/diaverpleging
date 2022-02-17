@@ -20,14 +20,9 @@ const Tekst: FC = () => {
         Culpa asperiores maiores perspiciatis totam minima quo omnis nulla
         adipisci sunt quibusdam! Perferendis repellat dolorum quos! <br />
         Incidunt, minima! Consequatur dicta ab eius repudiandae minima aliquid.
-        <br /> Ullam, accusantium. A, fugiat amet. Natus beatae ipsa eligendi
-        consequuntur quae architecto optio explicabo est error delectus dolor
-        quaerat autem dolore dolorem cum, <br /> odio amet voluptatum earum sit
-        qui impedit mollitia! Ipsa quod dolorum ea? In at soluta iusto,
-        <br /> possimus laudantium dignissimos nobis consequatur ullam.
-        <br /> Eum reprehenderit eius sit eveniet exercitationem suscipit.
-        Perspiciatis iure laudantium eligendi, <br />
-        corporis excepturi deserunt omnis nobis ex et ipsam corrupti.
+        <br /> Ullam, accusantium. A, fugiat amet. <br /> Natus beatae ipsa
+        eligendi consequuntur quae architecto optio explicabo est error delectus
+        dolor quaerat autem dolore dolorem cum,
       </p>
     </div>
   );

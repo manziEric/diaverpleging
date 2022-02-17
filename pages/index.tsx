@@ -1,9 +1,8 @@
 import type { NextPage } from "next";
 import { Layout } from "../src/components/layout";
 import CoreFeature from "../src/components/core-feature/CoreFeature";
-import Header from "../src/components/header";
+import Header from "../src/components/header/Header";
 import Text from "../src/components/midSection/Tekst";
-import Form from "../src/components/contactForm/ContactForm";
 import Input from "../src/components/contactForm/Input";
 import Services from "../src/components/services/Services";
 import Card from "../src/components/services/Card";
@@ -46,18 +45,21 @@ const Home: NextPage = () => {
         </ContactFormHandler>
         <Services>
           <Card />
-          <Button>Verzenden </Button>
         </Services>
         <ServiceSection>
           <TextSection />
           <Image src={pic1} alt={"random image"} type={"image/svg"} />
         </ServiceSection>
         <ServiceSection>
-          <TextSection />
+          <h1>Wat Anderen Over Ons Zeggen</h1>
           <Image src={pic2} alt={"random image"} type={"image/svg"} />
         </ServiceSection>
         <SubscribeFormHandler>
           <SubscribeForm>
+            <h2>
+              Schrijf je in op onze nieuwsbrief en ontvang de laatste weetjes
+              over gezondheid en thuisverpleging.
+            </h2>
             <Input type={"email"} name={"email"} placeholder={"Email"} />
             <Button>Verzenden </Button>
           </SubscribeForm>

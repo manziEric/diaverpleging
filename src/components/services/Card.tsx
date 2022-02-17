@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import styles from "../../../styles/card.module.css";
+import Button from "../button/Button";
 
 const Card = (): JSX.Element => {
   return (
@@ -64,6 +65,7 @@ const Card = (): JSX.Element => {
           </div>
         </div>
       </div>
+      <Button>Meer lezen</Button>
     </div>
   );
 };

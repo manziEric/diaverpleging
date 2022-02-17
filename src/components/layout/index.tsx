@@ -1,9 +1,10 @@
 import Head from "next/head";
-import React from "react";
+import React, { ReactNode } from "react";
+import Footer from "../footer/Footer";
 import { Navbar } from "../navbar";
 
 //TODO export default layout
-export const Layout = ({ children }: any): JSX.Element => {
+export const Layout = ({ children }: { children: ReactNode }): JSX.Element => {
   return (
     <div>
       <Head>
@@ -11,7 +12,7 @@ export const Layout = ({ children }: any): JSX.Element => {
       </Head>
       <Navbar />
       <div>{children}</div>
-      <footer>All rights reserved. Dia Verpleging</footer>
+      <Footer />
     </div>
   );
 };
