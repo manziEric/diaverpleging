@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import LockIcon from "@material-ui/icons/Lock";
-import IconsColumn from "components/icons-column";
+import IconsColumn from "src/components/icons-column";
 import styles from "styles/icons.module.css";
 
 const data = [

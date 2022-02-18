@@ -1,6 +1,16 @@
-import styles from "../../../styles/icons.module.css";
+import { SvgIconTypeMap } from "@mui/material";
+import { OverridableComponent } from "@mui/material/OverridableComponent";
+import styles from "styles/icons.module.css";
 
-export default function IconsColumn({ IconSrc, title, text }) {
+export default function IconsColumn({
+  IconSrc,
+  title,
+  text,
+}: {
+  IconSrc: OverridableComponent<SvgIconTypeMap<{}, "svg">>;
+  title: string;
+  text: string;
+}) {
   return (
     <div>
       <div>

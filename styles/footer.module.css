@@ -1,72 +1,89 @@
-.container {
-  background-color: "#232f3e";
-  width: "100%";
-  align-items: "stretch";
+.footer {
+  width: 100%;
+  bottom: 0;
+  color: black;
+  padding: 10px 0 30px;
+  font-size: 13px;
+  line-height: 20px;
 }
 
-.footerTopArea {
-  display: "flex";
-  flex-wrap: "wrap";
-  padding-top: 8rem;
-  padding-bottom: "20px";
-  padding: 4rem;
+.row {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
-.menus {
-  width: "20%";
-  display: "flex";
-  flex-direction: "column";
-  margin-bottom: "60px";
+.col {
+  flex-basis: 25%;
+  padding: 10px;
 }
 
-.heading {
-  font-size: 4rem;
-  color: "#fff";
-  font-weight: "500";
-  margin-bottom: 6rem;
-  line-height: "1.35";
+.col {
+  flex-basis: 25%;
+  padding: 10px;
 }
 
-.link {
-  font-size: 1rem;
-  color: "#fff";
-  font-weight: "body";
-  margin-bottom: 2;
-  cursor: "pointer";
-  transition: "all 0.35s";
-  display: "block";
-  text-decoration: "none";
-  line-height: 1.8;
+.col:nth-child(2),
+.col:nth-child(3) {
+  flex-basis: 15%;
 }
 
-.link:hover {
-  color: "yellow";
+.logo {
+  width: 80px;
+  margin-bottom: 30px;
 }
 
-.link:last-child {
-  margin-bottom: 0px;
+.col h3 {
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
 }
 
-.copyright {
-  font-size: 1rem;
-  margin-top: "-2rem";
-  width: "100%";
-  text-align: "center";
-  padding: 20px;
-  background-color: "#232f3e";
-  color: "#fff";
-}
-.copyright a {
-  text-decoration: "none";
-  color: "inherit";
-  padding-left: 1rem;
-  transition: "all 0.25s";
+.col ul {
+  padding: 0;
 }
 
-.copyright a:hover {
-  color: "yellow";
+.col ul li {
+  list-style: none;
+  margin-bottom: 12px;
 }
 
 .icon {
-  color: "#fff";
+  width: 40px !important;
+  height: 40px !important;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: #000;
+  background: #fff;
+  margin-right: 15px;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px #bebebec2;
+}
+
+.copyright {
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .col h3 {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+
+  .col {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .col:nth-child(2),
+  .col:nth-child(3) {
+    flex-basis: 100%;
+  }
 }
