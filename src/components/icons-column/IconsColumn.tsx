@@ -10,7 +10,7 @@ export default function IconsColumn({
   IconSrc: OverridableComponent<SvgIconTypeMap<{}, "svg">>;
   title: string;
   text: string;
-}) {
+}): JSX.Element {
   return (
     <div>
       <div>

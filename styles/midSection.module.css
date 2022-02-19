@@ -1,5 +1,7 @@
 .container {
   text-align: center;
-  margin-top: 10rem;
-  margin-bottom: 10rem;
+  margin-top: 15rem !important;
+  margin-bottom: 15rem !important;
+  margin: 0 auto;
+  width: 50vw;
 }

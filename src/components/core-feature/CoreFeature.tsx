@@ -1,37 +1,40 @@
-import React, { FC } from "react";
-import LockIcon from "@material-ui/icons/Lock";
-import IconsColumn from "src/components/icons-column";
+import React from "react";
+import IconsColumn from "src/components/icons-column/IconsColumn";
 import styles from "styles/icons.module.css";
+import SpaIcon from "@mui/icons-material/Spa";
+import SupervisorAccountIcon from "@mui/icons-material/SupervisorAccount";
+import AddIcCallIcon from "@mui/icons-material/AddIcCall";
+import ChatIcon from "@mui/icons-material/Chat";
 
 const data = [
   {
     id: 1,
-    IconSrc: LockIcon,
-    title: "Fast turnarounds",
-    text: "Card will be returned within 45 to 60 working days.",
+    IconSrc: SpaIcon,
+    title: "Meer rust",
+    text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est",
   },
   {
     id: 2,
 
-    IconSrc: LockIcon,
-    title: "Maximum insurance",
-    text: "We always insure your cards for their current market value, upon sending and return. ",
+    IconSrc: SupervisorAccountIcon,
+    title: "Vast verzorg(st)er",
+    text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est",
   },
   {
     id: 3,
-    IconSrc: LockIcon,
-    title: "Free personal delivery",
-    text: "We personally deliver high-value packages in consultation in the Netherlands and Belgium. Yes, for free!",
+    IconSrc: AddIcCallIcon,
+    title: "Telkens bereikbaar",
+    text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est",
   },
   {
     id: 4,
-    IconSrc: LockIcon,
-    title: "Personal contact",
-    text: "Any questions? We’re happy to personally answer them. Dutch jokes included!",
+    IconSrc: ChatIcon,
+    title: "Een luisterend oor",
+    text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est",
   },
 ];
 
-const CoreFeature: FC = () => {
+const CoreFeature = (): JSX.Element => {
   return (
     <div className={styles.container}>
       <h2>Waarom Dia Verpleging</h2>
