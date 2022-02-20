@@ -39,13 +39,8 @@ const CoreFeature = (): JSX.Element => {
     <div className={styles.container}>
       <h2>Waarom Dia Verpleging</h2>
       <div className={styles.grid}>
-        {data.map((item) => (
-          <IconsColumn
-            key={item.id}
-            IconSrc={item.IconSrc}
-            title={item.title}
-            text={item.text}
-          />
+        {data.map(({ id, IconSrc, title, text }) => (
+          <IconsColumn key={id} IconSrc={IconSrc} title={title} text={text} />
         ))}
       </div>
     </div>

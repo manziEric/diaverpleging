@@ -16,6 +16,7 @@ import ContactFormHandler from "src/components/contactForm/ContactFormHandler";
 import ContactForm from "src/components/contactForm/ContactForm";
 import SubscribeFormHandler from "src/components/subscribe/SubscribeFormHandler";
 import SubscribeForm from "src/components/subscribe/SubscribeForm";
+import Label from "src/components/contactForm/Label";
 
 //TODO:[] change all the imports to absolute path
 //TODO:[] remove <br/> from teksts
@@ -24,6 +25,8 @@ import SubscribeForm from "src/components/subscribe/SubscribeForm";
 //TODO:[] use styled components
 //TODO:[] Hamburger menu on mobile screen
 //TODO:[] Layout script optimaze
+//TODO:[] make Card component reuaseble
+//TODO:[] coreFeature add the data array in it own file
 
 const Home: NextPage = () => {
   return (
@@ -35,9 +38,13 @@ const Home: NextPage = () => {
       </Services>
       <ContactFormHandler>
         <ContactForm>
+          <Label name="name"></Label>
           <Input type={"text"} name={"name"} placeholder={"Name"} />
+          <Label name="email"></Label>
           <Input type={"email"} name={"email"} placeholder={"Email"} />
+          <Label name="phone"></Label>
           <Input type={"phone"} name={"phone"} placeholder={"Phone"} />
+          <Label name="message"></Label>
           <TextArea
             name={"message"}
             rows={8}
@@ -61,6 +68,7 @@ const Home: NextPage = () => {
             Schrijf je in op onze nieuwsbrief en ontvang de laatste weetjes over
             gezondheid en thuisverpleging.
           </h2>
+          <Label name="email"></Label>
           <Input type={"email"} name={"email"} placeholder={"Email"} />
           <Button>Verzenden </Button>
         </SubscribeForm>
