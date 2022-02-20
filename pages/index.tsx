@@ -17,54 +17,56 @@ import ContactFormHandler from "src/components/contactForm/ContactFormHandler";
 import ContactForm from "src/components/contactForm/ContactForm";
 import SubscribeFormHandler from "src/components/subscribe/SubscribeFormHandler";
 import SubscribeForm from "src/components/subscribe/SubscribeForm";
+import styles from "styles/home.module.css";
 
 //TODO:[] change all the imports to absolute path
 //TODO:[] remove <br/> from teksts
 //TODO:[] all components of type JSX.Element
+//TODO:[] put all the buttons input textarea... in own files in components file
 
 const Home: NextPage = () => {
   return (
     <Layout>
-      <main className="main">
-        <Header />
-        <CoreFeature />
-        <Text />
-        <ContactFormHandler>
-          <ContactForm>
-            <Input type={"text"} name={"name"} placeholder={"Name"} />
-            <Input type={"email"} name={"email"} placeholder={"Email"} />
-            <Input type={"phone"} name={"phone"} placeholder={"Phone"} />
-            <TextArea
-              name={"message"}
-              rows={8}
-              cols={50}
-              placeholder={"Message"}
-            />
-            <Button>Boek je afspraak</Button>
-          </ContactForm>
-        </ContactFormHandler>
-        <Services>
-          <Card />
-        </Services>
-        <ServiceSection>
-          <TextSection />
-          <Image src={pic1} alt={"random image"} type={"image/svg"} />
-        </ServiceSection>
-        <ServiceSection>
-          <h1>Wat Anderen Over Ons Zeggen</h1>
-          <Image src={pic2} alt={"random image"} type={"image/svg"} />
-        </ServiceSection>
-        <SubscribeFormHandler>
-          <SubscribeForm>
-            <h2>
-              Schrijf je in op onze nieuwsbrief en ontvang de laatste weetjes
-              over gezondheid en thuisverpleging.
-            </h2>
-            <Input type={"email"} name={"email"} placeholder={"Email"} />
-            <Button>Verzenden </Button>
-          </SubscribeForm>
-        </SubscribeFormHandler>
-      </main>
+      <Header />
+      <CoreFeature />
+      <Text />
+      <ContactFormHandler>
+        <ContactForm>
+          <Input type={"text"} name={"name"} placeholder={"Name"} />
+          <Input type={"email"} name={"email"} placeholder={"Email"} />
+          <Input type={"phone"} name={"phone"} placeholder={"Phone"} />
+          <TextArea
+            name={"message"}
+            rows={8}
+            cols={50}
+            placeholder={"Message"}
+          />
+          <Button>Boek je afspraak</Button>
+        </ContactForm>
+      </ContactFormHandler>
+      <Services>
+        <Card />
+      </Services>
+      <ServiceSection>
+        <TextSection />
+        <Image src={pic1} alt={"random image"} type={"image/svg"} />
+      </ServiceSection>
+      <ServiceSection>
+        <h1 className={styles.h1}>
+          Wat Anderen Over <br /> Ons Zeggen
+        </h1>
+        <Image src={pic2} alt={"random image"} type={"image/svg"} />
+      </ServiceSection>
+      <SubscribeFormHandler>
+        <SubscribeForm>
+          <h2 className={styles.h2}>
+            Schrijf je in op onze nieuwsbrief en ontvang de laatste weetjes over
+            gezondheid en thuisverpleging.
+          </h2>
+          <Input type={"email"} name={"email"} placeholder={"Email"} />
+          <Button>Verzenden </Button>
+        </SubscribeForm>
+      </SubscribeFormHandler>
     </Layout>
   );
 };
