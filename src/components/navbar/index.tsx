@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { FC } from "react";
-import styles from "../../../styles/nav.module.css";
-import logo from "../../../assets/Group597.svg";
+import styles from "styles/nav.module.css";
+import logo from "assets/Group597.svg";
 
-export const Navbar: FC = () => {
+export const Navbar = (): JSX.Element => {
   return (
     <div className={styles.container}>
       <div className={styles.item}>

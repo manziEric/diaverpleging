@@ -1,5 +1,5 @@
 import React, { createContext, ReactNode } from "react";
-import styles from "../../../styles/serviceSection.module.css";
+import styles from "styles/serviceSection.module.css";
 
 const ServiceSectionContext = createContext<any>(null);
 

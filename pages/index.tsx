@@ -2,7 +2,6 @@ import type { NextPage } from "next";
 import { Layout } from "src/components/layout";
 import CoreFeature from "src/components/core-feature/CoreFeature";
 import Header from "src/components/header/Header";
-import Text from "src/components/midSection/Tekst";
 import Input from "src/components/contactForm/Input";
 import Services from "src/components/services/Services";
 import Card from "src/components/services/Card";
@@ -17,19 +16,23 @@ import ContactFormHandler from "src/components/contactForm/ContactFormHandler";
 import ContactForm from "src/components/contactForm/ContactForm";
 import SubscribeFormHandler from "src/components/subscribe/SubscribeFormHandler";
 import SubscribeForm from "src/components/subscribe/SubscribeForm";
-import styles from "styles/home.module.css";
 
 //TODO:[] change all the imports to absolute path
 //TODO:[] remove <br/> from teksts
 //TODO:[] all components of type JSX.Element
 //TODO:[] put all the buttons input textarea... in own files in components file
+//TODO:[] use styled components
+//TODO:[] Hamburger menu on mobile screen
+//TODO:[] Layout script optimaze
 
 const Home: NextPage = () => {
   return (
     <Layout>
       <Header />
       <CoreFeature />
-      <Text />
+      <Services>
+        <Card />
+      </Services>
       <ContactFormHandler>
         <ContactForm>
           <Input type={"text"} name={"name"} placeholder={"Name"} />
@@ -44,22 +47,17 @@ const Home: NextPage = () => {
           <Button>Boek je afspraak</Button>
         </ContactForm>
       </ContactFormHandler>
-      <Services>
-        <Card />
-      </Services>
       <ServiceSection>
         <TextSection />
-        <Image src={pic1} alt={"random image"} type={"image/svg"} />
+        <Image src={pic1} alt={"random image"} />
       </ServiceSection>
       <ServiceSection>
-        <h1 className={styles.h1}>
-          Wat Anderen Over <br /> Ons Zeggen
-        </h1>
-        <Image src={pic2} alt={"random image"} type={"image/svg"} />
+        <h2>Wat Anderen Over Ons Zeggen</h2>
+        <Image src={pic2} alt={"random image"} />
       </ServiceSection>
       <SubscribeFormHandler>
         <SubscribeForm>
-          <h2 className={styles.h2}>
+          <h2>
             Schrijf je in op onze nieuwsbrief en ontvang de laatste weetjes over
             gezondheid en thuisverpleging.
           </h2>
