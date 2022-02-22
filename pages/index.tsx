@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import { Layout } from "src/components/layout";
+import { Layout } from "src/components/layout/Layout";
 import CoreFeature from "src/components/core-feature/CoreFeature";
 import Header from "src/components/header/Header";
 import Input from "src/components/contactForm/Input";

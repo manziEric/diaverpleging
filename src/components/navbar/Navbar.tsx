@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { FC } from "react";
 import styles from "styles/nav.module.css";
 import logo from "assets/Group597.svg";
+import Link from "next/link";
 
 export const Navbar = (): JSX.Element => {
   return (
@@ -13,10 +13,16 @@ export const Navbar = (): JSX.Element => {
       </div>
       <div className={styles.item}>
         <ul className={styles.list}>
-          <li className={styles.listItem}>Home</li>
-          <li className={styles.listItem}>Diensten</li>
-          <li className={styles.listItem}>Over Ons</li>
-          <li className={styles.listItem}>Contact</li>
+          <li className={styles.listItem}>
+            <Link href="/">Home</Link>
+          </li>
+          <li className={styles.listItem}>
+            <Link href="/diensten">Diensten</Link>
+          </li>
+          {/* <li className={styles.listItem}>Over Ons</li> */}
+          <li className={styles.listItem}>
+            <Link href="/contact">Contact</Link>
+          </li>
         </ul>
       </div>
     </div>

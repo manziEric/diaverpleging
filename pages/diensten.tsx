@@ -6,15 +6,18 @@ import ContactFormHandler from "src/components/contactForm/ContactFormHandler";
 import Input from "src/components/contactForm/Input";
 import Label from "src/components/contactForm/Label";
 import TextArea from "src/components/contactForm/TextArea";
-import { Layout } from "src/components/layout";
+import Header from "src/components/header/Header";
+import { Layout } from "src/components/layout/Layout";
 import { serviceCardData } from "src/components/services/serviceCard.data";
 import ServiceCards from "src/components/services/ServiceCards";
 import Services from "src/components/services/Services";
+import styles from "styles/diensten.module.css";
 
 const Diensten: NextPage = () => {
   return (
     <Layout>
-      <h1>Onze Diensten</h1>
+      <Header />
+      <h2 className={styles.h2}>Onze Diensten</h2>
       <Services>
         {serviceCardData.map(({ id, text, image1, image2 }) => (
           <ServiceCards key={id} text={text} image1={image1} image2={image2} />
