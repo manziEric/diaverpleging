@@ -1,11 +1,12 @@
 import { NextPage } from "next";
-import Layout from "src/components/layout/Layout";
-import Button from "src/components/button/Button";
-import ContactForm from "src/components/contactForm/ContactForm";
+import { name, email, phone, message } from "utils/formConstants";
 import ContactFormHandler from "src/components/contactForm/ContactFormHandler";
+import ContactForm from "src/components/contactForm/ContactForm";
+import TextArea from "src/components/contactForm/TextArea";
 import Input from "src/components/contactForm/Input";
 import Label from "src/components/contactForm/Label";
-import TextArea from "src/components/contactForm/TextArea";
+import Layout from "src/components/layout/Layout";
+import Button from "src/components/button/Button";
 import Header from "src/components/header/Header";
 
 const contact: NextPage = () => {
@@ -21,19 +22,14 @@ const contact: NextPage = () => {
       />
       <ContactFormHandler>
         <ContactForm>
-          <Label name="name"></Label>
-          <Input type={"text"} name={"name"} placeholder={"Name"} />
-          <Label name="email"></Label>
-          <Input type={"email"} name={"email"} placeholder={"Email"} />
-          <Label name="phone"></Label>
-          <Input type={"phone"} name={"phone"} placeholder={"Phone"} />
-          <Label name="message"></Label>
-          <TextArea
-            name={"message"}
-            rows={8}
-            cols={50}
-            placeholder={"Message"}
-          />
+          <Label name={name} />
+          <Input type="text" name={name} placeholder={name} />
+          <Label name={email} />
+          <Input type="email" name={email} placeholder={email} />
+          <Label name={phone} />
+          <Input type="tel" name={phone} placeholder={phone} />
+          <Label name={message} />
+          <TextArea name={message} rows={8} cols={50} placeholder={message} />
           <Button>Boek je afspraak</Button>
         </ContactForm>
       </ContactFormHandler>
