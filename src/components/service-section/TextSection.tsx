@@ -1,6 +1,5 @@
-import React from "react";
-import styles from "styles/serviceSection.module.css";
 import Button from "src/components/button/Button";
+import styles from "styles/serviceSection.module.css";
 
 const TextSection = (): JSX.Element => {
   return (

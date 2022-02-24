@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "styles/midSection.module.css";
 
 const Tekst = (): JSX.Element => {

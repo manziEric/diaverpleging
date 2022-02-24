@@ -8,8 +8,6 @@ import Card from "src/components/services/Card";
 import ServiceSection from "src/components/service-section/ServiceSection";
 import TextSection from "src/components/service-section/TextSection";
 import Image from "src/components/service-section/ImageSection";
-import pic1 from "assets/Image.svg";
-import pic2 from "assets/Group64.svg";
 import Button from "src/components/button/Button";
 import TextArea from "src/components/contactForm/TextArea";
 import ContactFormHandler from "src/components/contactForm/ContactFormHandler";
@@ -17,6 +15,9 @@ import ContactForm from "src/components/contactForm/ContactForm";
 import SubscribeFormHandler from "src/components/subscribe/SubscribeFormHandler";
 import SubscribeForm from "src/components/subscribe/SubscribeForm";
 import Label from "src/components/contactForm/Label";
+import pic1 from "assets/Image.svg";
+import pic2 from "assets/Group64.svg";
+import CardContent from "src/components/services/CardContent";
 
 //TODO:[] Change all the imports to absolute path
 //TODO:[] Remove <br/> from teksts
@@ -28,6 +29,7 @@ import Label from "src/components/contactForm/Label";
 //TODO:[] Make Card component reuaseble
 //TODO:[] CoreFeature add the data array in it own file
 //TODO:[] Create interfaces for the props
+//TODO:[] remove h2 in index, diensten page
 
 const Home: NextPage = () => {
   return (
@@ -39,7 +41,28 @@ const Home: NextPage = () => {
       />
       <CoreFeature />
       <Services>
-        <Card />
+        <Card>
+          <CardContent
+            text="Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Doloremque explicabo dolorem maiores rem nobis, inventore
+                  praesentium"
+          />
+          <CardContent
+            text="Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Doloremque explicabo dolorem maiores rem nobis, inventore
+                  praesentium"
+          />
+          <CardContent
+            text="Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Doloremque explicabo dolorem maiores rem nobis, inventore
+                  praesentium"
+          />
+          <CardContent
+            text="Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Doloremque explicabo dolorem maiores rem nobis, inventore
+                  praesentium"
+          />
+        </Card>
       </Services>
       <ContactFormHandler>
         <ContactForm>

@@ -14,11 +14,15 @@
   left: 0;
 }
 
-.textImage {
+.text {
   position: absolute;
   top: 10rem;
   left: 5rem;
   right: 5rem;
+}
+
+.text p {
+  margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 480px) {

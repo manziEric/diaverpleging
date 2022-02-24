@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import React from "react";
+import Layout from "src/components/layout/Layout";
 import Button from "src/components/button/Button";
 import ContactForm from "src/components/contactForm/ContactForm";
 import ContactFormHandler from "src/components/contactForm/ContactFormHandler";
@@ -7,7 +7,6 @@ import Input from "src/components/contactForm/Input";
 import Label from "src/components/contactForm/Label";
 import TextArea from "src/components/contactForm/TextArea";
 import Header from "src/components/header/Header";
-import Layout from "src/components/layout/Layout";
 
 const contact: NextPage = () => {
   return (

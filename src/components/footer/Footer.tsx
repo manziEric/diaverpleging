@@ -1,11 +1,10 @@
-import React from "react";
-import styles from "styles/footer.module.css";
-import Image from "next/image";
-import logo from "assets/Group597.svg";
 import Link from "next/link";
+import Image from "next/image";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import logo from "assets/Group597.svg";
+import styles from "styles/footer.module.css";
 
 const Footer = (): JSX.Element => {
   return (

@@ -35,6 +35,8 @@
 .listItem {
   margin: 20px;
   font-weight: 500;
+  line-height: 2rem;
+  vertical-align: center;
 }
 
 @media screen and (max-width: 480px) {

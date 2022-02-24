@@ -1,10 +1,9 @@
-import React from "react";
 import IconsColumn from "src/components/icons-column/IconsColumn";
-import styles from "styles/icons.module.css";
 import SpaIcon from "@mui/icons-material/Spa";
 import SupervisorAccountIcon from "@mui/icons-material/SupervisorAccount";
 import AddIcCallIcon from "@mui/icons-material/AddIcCall";
 import ChatIcon from "@mui/icons-material/Chat";
+import styles from "styles/icons.module.css";
 
 const data = [
   {

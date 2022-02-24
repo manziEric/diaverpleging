@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import logo from "assets/Group597.svg";
 import Button from "src/components/button/Button";
+import logo from "assets/Group597.svg";
 import styles from "styles/nav.module.css";
 
 export const Navbar = (): JSX.Element => {
