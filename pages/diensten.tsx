@@ -7,7 +7,7 @@ import Input from "src/components/contactForm/Input";
 import Label from "src/components/contactForm/Label";
 import TextArea from "src/components/contactForm/TextArea";
 import Header from "src/components/header/Header";
-import { Layout } from "src/components/layout/Layout";
+import Layout from "src/components/layout/Layout";
 import { serviceCardData } from "src/components/services/serviceCard.data";
 import ServiceCards from "src/components/services/ServiceCards";
 import Services from "src/components/services/Services";
@@ -16,7 +16,13 @@ import styles from "styles/diensten.module.css";
 const Diensten: NextPage = () => {
   return (
     <Layout>
-      <Header />
+      <Header
+        title={"Onze Diensten"}
+        tekst={
+          "Met zorg gegeven door een team van gepassioneerde verplegers en verpleegsters. "
+        }
+        isButton={false}
+      />
       <h2 className={styles.h2}>Onze Diensten</h2>
       <Services>
         {serviceCardData.map(({ id, text, image1, image2 }) => (

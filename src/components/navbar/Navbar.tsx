@@ -1,7 +1,8 @@
 import Image from "next/image";
-import styles from "styles/nav.module.css";
-import logo from "assets/Group597.svg";
 import Link from "next/link";
+import logo from "assets/Group597.svg";
+import Button from "src/components/button/Button";
+import styles from "styles/nav.module.css";
 
 export const Navbar = (): JSX.Element => {
   return (
@@ -22,6 +23,9 @@ export const Navbar = (): JSX.Element => {
           {/* <li className={styles.listItem}>Over Ons</li> */}
           <li className={styles.listItem}>
             <Link href="/contact">Contact</Link>
+          </li>
+          <li className={styles.listItem}>
+            <Button>Boek Je Afspraak</Button>
           </li>
         </ul>
       </div>

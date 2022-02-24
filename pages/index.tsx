@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import { Layout } from "src/components/layout/Layout";
+import Layout from "src/components/layout/Layout";
 import CoreFeature from "src/components/core-feature/CoreFeature";
 import Header from "src/components/header/Header";
 import Input from "src/components/contactForm/Input";
@@ -18,20 +18,25 @@ import SubscribeFormHandler from "src/components/subscribe/SubscribeFormHandler"
 import SubscribeForm from "src/components/subscribe/SubscribeForm";
 import Label from "src/components/contactForm/Label";
 
-//TODO:[] change all the imports to absolute path
-//TODO:[] remove <br/> from teksts
-//TODO:[] all components of type JSX.Element
-//TODO:[] put all the buttons input textarea... in own files in components file
-//TODO:[] use styled components
+//TODO:[] Change all the imports to absolute path
+//TODO:[] Remove <br/> from teksts
+//TODO:[] All components of type JSX.Element
+//TODO:[] Put all the buttons input textarea... in own files in components file
+//TODO:[] Use styled components
 //TODO:[] Hamburger menu on mobile screen
 //TODO:[] Layout script optimaze
-//TODO:[] make Card component reuaseble
-//TODO:[] coreFeature add the data array in it own file
+//TODO:[] Make Card component reuaseble
+//TODO:[] CoreFeature add the data array in it own file
+//TODO:[] Create interfaces for the props
 
 const Home: NextPage = () => {
   return (
     <Layout>
-      <Header />
+      <Header
+        title={"Thuisverpleging in zorgende handen"}
+        tekst={"Voor meer zorgeloze momenten in je leven."}
+        isButton={true}
+      />
       <CoreFeature />
       <Services>
         <Card />
