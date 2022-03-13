@@ -1,10 +1,10 @@
-import Link from "next/link";
-import Image from "next/image";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import logo from "assets/Group597.svg";
-import styles from "styles/footer.module.css";
+import Link from 'next/link';
+import Image from 'next/image';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import logo from 'assets/Group597.svg';
+import styles from 'styles/footer.module.css';
 
 const Footer = (): JSX.Element => {
   return (
@@ -19,7 +19,6 @@ const Footer = (): JSX.Element => {
           <p>
             Book een verpleegster in u <br /> buurt in enkele minuten
           </p>
-
           <p className={styles.email}>
             Tel 0488888888 <br /> info@diaverpleging.be
           </p>
@@ -31,10 +30,10 @@ const Footer = (): JSX.Element => {
               <Link href="/">Home</Link>
             </li>
             <li>
-              <Link href="/">Diensten</Link>
+              <Link href="/diensten">Diensten</Link>
             </li>
             <li>
-              <Link href="/">Contact</Link>
+              <Link href="/contact">Contact</Link>
             </li>
           </ul>
         </div>

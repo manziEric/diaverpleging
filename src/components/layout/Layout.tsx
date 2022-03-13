@@ -1,7 +1,7 @@
 import Head from "next/head";
 import React, { ReactNode } from "react";
 import Footer from "src/components/footer/Footer";
-import { Navbar } from "src/components/navbar/Navbar";
+import Navbar from "src/components/navbar/Navbar";
 
 const Layout = ({ children }: { children: ReactNode }): JSX.Element => {
   return (

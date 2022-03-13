@@ -1,11 +1,18 @@
-import React, { ReactNode } from "react";
-import styles from "styles/form.module.css";
+import React, { ReactNode } from 'react';
+import styles from 'styles/form.module.css';
+import useContactFormHandler from 'src/components/contactForm/useContactFormHandler';
 
-const ContactForm = ({ children }: { children: ReactNode }): JSX.Element => {
+interface ComponentProps {
+  children: ReactNode;
+  title: string;
+}
+
+const ContactForm = ({ children, title }: ComponentProps): JSX.Element => {
+  const [contactFormHandler] = useContactFormHandler();
   return (
     <div className={styles.contactContainer}>
-      <h2>Vraag meteen Je consulatie aan</h2>
-      <form action="#" className={styles.form}>
+      <h2>{title}</h2>
+      <form onSubmit={contactFormHandler} className={styles.form}>
         {children}
       </form>
     </div>

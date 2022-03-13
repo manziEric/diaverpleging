@@ -1,5 +1,5 @@
-import Button from "src/components/button/Button";
-import styles from "styles/serviceSection.module.css";
+import Button from 'src/components/button';
+import styles from 'styles/serviceSection.module.css';
 
 const TextSection = (): JSX.Element => {
   return (
@@ -11,7 +11,7 @@ const TextSection = (): JSX.Element => {
         je je leven zo prettig mogelijk kan leiden. We geloven in de kracht van
         een hartverwarmende lach en een oprechte babbel.
       </p>
-      <Button>Leer meer over ons</Button>
+      <Button route="/diensten">Leer meer over ons</Button>
     </div>
   );
 };

@@ -1,14 +1,16 @@
-import styles from "styles/card.module.css";
+import styles from 'styles/card.module.css';
 
 interface ComponentProps {
+  title: string;
   text: string;
 }
 
-const CardContent = ({ text }: ComponentProps) => {
+const CardContent = ({ title, text }: ComponentProps) => {
   return (
     <div className={styles.card}>
       <div className={styles.cardCircle}></div>
       <div className={styles.content}>
+        <h6>{title}</h6>
         <p>{text}</p>
       </div>
     </div>

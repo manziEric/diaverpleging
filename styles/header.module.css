@@ -4,7 +4,7 @@
 }
 
 .backgroundImage {
-  background-image: url("../assets/Decore.svg");
+  background-image: url('../assets/Decore.svg');
   background-repeat: no-repeat;
   background-position: right;
   min-height: 60rem;
@@ -23,6 +23,7 @@
 
 .text p {
   margin-bottom: 2rem;
+  max-width: 40rem;
 }
 
 @media screen and (max-width: 480px) {

@@ -1,21 +1,24 @@
-import styles from "styles/form.module.css";
+interface ComponentProps {
+  type: string;
+  name: string;
+  placeholder: string;
+  inputStyles: any;
+}
 
 const Input = ({
   type,
   name,
   placeholder,
-}: {
-  type: string;
-  name: string;
-  placeholder: string;
-}): JSX.Element => {
+  inputStyles,
+}: ComponentProps): JSX.Element => {
   return (
-    <div className={styles.containerInput}>
+    <div className={inputStyles.containerInput}>
       <input
-        className={styles.input}
+        className={inputStyles}
         type={type}
         name={name}
         placeholder={placeholder}
+        required
       />
     </div>
   );

@@ -1,10 +1,21 @@
-import React, { ReactNode } from "react";
-import styles from "styles/form.module.css";
+import React, { ReactNode } from 'react';
+import styles from 'styles/form.module.css';
+import useButtonHandler from 'src/components/button/useButtonHandler';
 
-const Button = ({ children }: { children: ReactNode }): JSX.Element => {
+interface ComponentProps {
+  children: ReactNode;
+  route: string;
+}
+
+const Button = ({ children, route }: ComponentProps): JSX.Element => {
+  const [handleButtonClick] = useButtonHandler();
   return (
     <div className={styles.containerButton}>
-      <button className={styles.button} type="submit">
+      <button
+        className={styles.button}
+        type="submit"
+        onClick={() => handleButtonClick(route)}
+      >
         {children}
       </button>
     </div>

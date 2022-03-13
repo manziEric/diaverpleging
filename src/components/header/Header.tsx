@@ -1,5 +1,5 @@
-import Button from "src/components/button/Button";
-import styles from "styles/header.module.css";
+import Button from 'src/components/button/Button';
+import styles from 'styles/header.module.css';
 
 interface ComponentProps {
   title: string;
@@ -14,7 +14,7 @@ const Header = ({ title, tekst, isButton }: ComponentProps): JSX.Element => {
       <div className={styles.text}>
         <h1>{title}</h1>
         <p>{tekst}</p>
-        {isButton ? <Button>Boek je afspraak</Button> : null}
+        {isButton ? <Button route="/contact">Boek je afspraak</Button> : null}
       </div>
     </div>
   );
