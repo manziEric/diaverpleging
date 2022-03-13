@@ -17,10 +17,10 @@ const Footer = (): JSX.Element => {
             alt="logo of diaverpleging"
           />
           <p>
-            Book een verpleegster in u <br /> buurt in enkele minuten
+            Boek een verpleegster in u <br /> buurt in enkele minuten
           </p>
           <p className={styles.email}>
-            Tel 0488888888 <br /> info@diaverpleging.be
+            Tel +32 (0) 469 13 36 62 <br /> info@diaverpleging.be
           </p>
         </div>
         <div className={styles.col}>

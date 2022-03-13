@@ -14,11 +14,11 @@ import TextArea from 'src/components/contactForm/TextArea';
 import Services from 'src/components/services/Services';
 import Label from 'src/components/contactForm/Label';
 import Input from 'src/components/contactForm/Input';
+import pic1 from 'assets/homepage/Homepagina.png';
 import Layout from 'src/components/layout/Layout';
 import Header from 'src/components/header/Header';
 import Card from 'src/components/services/Card';
-import pic2 from 'assets/Group64.svg';
-import pic1 from 'assets/Image.svg';
+import pic2 from 'assets/homepage/Group64.svg';
 
 import inputStyles from 'styles/form.module.css';
 

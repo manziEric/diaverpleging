@@ -1,14 +1,13 @@
-import React, { FC } from "react";
-import styles from "styles/serviceSection.module.css";
-import Image from "next/image";
+import React, { FC } from 'react';
+import styles from 'styles/serviceSection.module.css';
+import Image from 'next/image';
 
-const ImageSection = ({
-  src,
-  alt,
-}: {
-  src: string;
+interface ComponentProps {
+  src: string | StaticImageData;
   alt: string;
-}): JSX.Element => {
+}
+
+const ImageSection = ({ src, alt }: ComponentProps): JSX.Element => {
   return (
     <div className={styles.grid_item}>
       <Image src={src} alt={alt} />

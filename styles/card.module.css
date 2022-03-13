@@ -14,6 +14,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin-bottom: 2rem;
 }
 
 .cardContainer .card {
@@ -66,28 +67,28 @@
 }
 
 .cardContainer .card:nth-child(1) .cardCircle {
-  background: url('../assets/doctor.jpg');
+  background: url('../assets/homepage/HomeWondzorg.png');
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .cardContainer .card:nth-child(2) .cardCircle {
-  background: url('../assets/nurse.jpg');
+  background: url('../assets/homepage/HomeDiabetes.png');
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .cardContainer .card:nth-child(3) .cardCircle {
-  background: url('../assets/doctor.jpg');
+  background: url('../assets/homepage/HomePalliatieveZorg.png');
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .cardContainer .card:nth-child(4) .cardCircle {
-  background: url('../assets/nurse.jpg');
+  background: url('../assets/homepage/HomeIncontinentie.png');
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
