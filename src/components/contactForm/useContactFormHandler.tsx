@@ -6,7 +6,6 @@ const useContactFormHandler = () => {
   const contactFormHandler = async (e: any, isSubscribe: boolean = false) => {
     e.preventDefault();
 
-    console.log(!isSubscribe);
     if (!isSubscribe) {
       const postDataToServer = {
         name: e.target.Name.value,

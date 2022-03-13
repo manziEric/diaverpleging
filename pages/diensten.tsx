@@ -20,10 +20,30 @@ const Diensten: NextPage = () => {
       <h2 className={styles.h2}>Onze Diensten</h2>
       <Services>
         {serviceCardData.map(
-          ({ id, title1, title2, text1, text2, image1, image2 }) => (
+          ({
+            id,
+            title1,
+            title2,
+            text1,
+            text2,
+            image1,
+            image2,
+            alt1,
+            alt2,
+          }) => (
             <ServiceCards key={id}>
-              <ServiceCardsContent title={title1} text={text1} image={image1} />
-              <ServiceCardsContent title={title2} text={text2} image={image2} />
+              <ServiceCardsContent
+                title={title1}
+                text={text1}
+                image={image1}
+                alt={alt1}
+              />
+              <ServiceCardsContent
+                title={title2}
+                text={text2}
+                image={image2}
+                alt={alt2}
+              />
             </ServiceCards>
           )
         )}
@@ -32,7 +52,7 @@ const Diensten: NextPage = () => {
         <ContactForm title="Vraag meteen je intakegesprek aan.">
           <h3>
             Staat jouw zorgbehoefte er niet tussen? Stuur ons eeen bericht en we
-            kijken graag hoe we je kunnen helpen.{' '}
+            kijken graag hoe we je kunnen helpen.
           </h3>
           <Label name={name} />
           <Input

@@ -1,12 +1,11 @@
-import React, { ReactNode } from "react";
+import React, { ReactNode } from 'react';
 
-const Label = ({
-  name,
-  children,
-}: {
+interface ComponentProps {
   name: string;
   children?: ReactNode;
-}): JSX.Element => {
+}
+
+const Label = ({ name, children }: ComponentProps): JSX.Element => {
   return (
     <label htmlFor={name} className="label">
       {children}

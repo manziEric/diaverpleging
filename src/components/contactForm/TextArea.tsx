@@ -1,16 +1,18 @@
-import styles from "styles/form.module.css";
+import styles from 'styles/form.module.css';
+
+interface ComponentProps {
+  name: string;
+  rows: number;
+  cols: number;
+  placeholder: string;
+}
 
 const TextArea = ({
   name,
   rows,
   cols,
   placeholder,
-}: {
-  name: string;
-  rows: number;
-  cols: number;
-  placeholder: string;
-}): JSX.Element => {
+}: ComponentProps): JSX.Element => {
   return (
     <div className={styles.containertextarea}>
       <textarea
