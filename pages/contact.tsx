@@ -1,21 +1,18 @@
-import { NextPage } from 'next';
-import { name, email, phone, message, submit } from 'utils/formConstants';
 import ContactFormHandler from 'src/components/contactForm/ContactFormHandler';
+import { name, email, phone, message, submit } from 'utils/formConstants';
 import ContactForm from 'src/components/contactForm/ContactForm';
 import TextArea from 'src/components/contactForm/TextArea';
 import Input from 'src/components/contactForm/Input';
 import Label from 'src/components/contactForm/Label';
 import Layout from 'src/components/layout/Layout';
-
+import Header from 'src/components/header/Header';
 import inputStyles from 'styles/form.module.css';
 
-import Header from 'src/components/header/Header';
-
-const contact: NextPage = () => {
+function contact(): JSX.Element {
   return (
     <Layout>
       <Header
-        title={'Je bent in zorgende handen'}
+        title="Je bent in zorgende handen"
         tekst={`Laat je bijstaan in je gezondheid door zorgprofessionals die van hun 
         passie hun job hebben gemaakt.
         Vul het formulier hieronder in voor meer comfort en zorgeloosheid 
@@ -57,6 +54,6 @@ const contact: NextPage = () => {
       </ContactFormHandler>
     </Layout>
   );
-};
+}
 
 export default contact;

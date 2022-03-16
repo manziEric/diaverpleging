@@ -18,14 +18,16 @@
             "jsx": true
         },
         "ecmaVersion": 13,
-        "sourceType": "module"
+        "sourceType": "module",
+        "project": "./tsconfig.json"
     },
     "plugins": [
         "react",
-        "@typescript-eslint"
+        "@typescript-eslint",
+        "prettier"
     ],
     "rules": {
-        "no-unused-vars":"error",
+        "no-unused-vars":"warn",
         "prettier/prettier": "error",
         "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx"] }],
         "no-restricted-imports": ["error", {

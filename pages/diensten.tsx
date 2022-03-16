@@ -1,5 +1,4 @@
-import { NextPage } from 'next';
-import { serviceCardData } from 'src/components/services/serviceCard.data';
+import serviceCardData from 'src/components/services/serviceCard.data';
 import { name, email, phone, message, submit } from 'utils/formConstants';
 import ContactFormHandler from 'src/components/contactForm/ContactFormHandler';
 import ServiceCardsContent from 'src/components/services/ServiceCardsContent';
@@ -13,8 +12,7 @@ import Layout from 'src/components/layout/Layout';
 import styles from 'styles/diensten.module.css';
 import inputStyles from 'styles/form.module.css';
 
-const Diensten: NextPage = () => {
-  console.log('routing diensten');
+function Diensten(): JSX.Element {
   return (
     <Layout>
       <h2 className={styles.h2}>Onze Diensten</h2>
@@ -87,6 +85,6 @@ const Diensten: NextPage = () => {
       </ContactFormHandler>
     </Layout>
   );
-};
+}
 
 export default Diensten;
