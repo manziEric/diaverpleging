@@ -3,21 +3,22 @@ import ContactFormHandler from 'src/components/contactForm/ContactFormHandler';
 import ServiceSection from 'src/components/service-section/ServiceSection';
 import { name, email, phone, message, submit } from 'utils/formConstants';
 import CardContentData from 'src/components/services/CardContent.data';
-import ImageSection from 'src/components/service-section/ImageSection';
-import TextSection from 'src/components/service-section/TextSection';
+import ImageSection from 'src/components/imageSection/ImageSection';
+import TextSection from 'src/components/textSection/TextSection';
 import SubscribeForm from 'src/components/subscribe/SubscribeForm';
 import CoreFeature from 'src/components/core-feature/CoreFeature';
 import ContactForm from 'src/components/contactForm/ContactForm';
 import CardContent from 'src/components/services/CardContent';
-import TextArea from 'src/components/contactForm/TextArea';
+import TextArea from 'src/components/textArea/TextArea';
 import Services from 'src/components/services/Services';
-import Label from 'src/components/contactForm/Label';
-import Input from 'src/components/contactForm/Input';
+import Label from 'src/components/label/Label';
+import Input from 'src/components/input/Input';
 import pic1 from 'assets/homepage/Homepagina.png';
 import Layout from 'src/components/layout/Layout';
 import Header from 'src/components/header/Header';
 import Card from 'src/components/services/Card';
 import pic2 from 'assets/homepage/Group64.svg';
+
 import inputStyles from 'styles/form.module.css';
 
 function Home(): JSX.Element {

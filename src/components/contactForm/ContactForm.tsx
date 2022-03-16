@@ -1,13 +1,13 @@
-import React, { ReactNode } from 'react';
-import styles from 'styles/form.module.css';
+import { ReactNode } from 'react';
 import useContactFormHandler from 'src/components/contactForm/useContactFormHandler';
+import styles from 'styles/form.module.css';
 
 interface ComponentProps {
   children: ReactNode;
   title: string;
 }
 
-const ContactForm = ({ children, title }: ComponentProps): JSX.Element => {
+function ContactForm({ children, title }: ComponentProps): JSX.Element {
   const [contactFormHandler] = useContactFormHandler();
   return (
     <div className={styles.contactContainer}>
@@ -17,6 +17,6 @@ const ContactForm = ({ children, title }: ComponentProps): JSX.Element => {
       </form>
     </div>
   );
-};
+}
 
 export default ContactForm;

@@ -1,9 +1,13 @@
-import Head from "next/head";
-import React, { ReactNode } from "react";
-import Footer from "src/components/footer/Footer";
-import Navbar from "src/components/navbar/Navbar";
+import { ReactNode } from 'react';
+import Footer from 'src/components/footer/Footer';
+import Navbar from 'src/components/navbar/Navbar';
+import Head from 'next/head';
 
-const Layout = ({ children }: { children: ReactNode }): JSX.Element => {
+interface ComponentsProps {
+  children: ReactNode;
+}
+
+function Layout({ children }: ComponentsProps): JSX.Element {
   return (
     <div>
       <Head>
@@ -14,6 +18,6 @@ const Layout = ({ children }: { children: ReactNode }): JSX.Element => {
       <Footer />
     </div>
   );
-};
+}
 
 export default Layout;

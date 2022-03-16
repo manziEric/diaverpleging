@@ -1,17 +1,16 @@
-import React, { createContext, ReactNode } from "react";
+import { createContext, ReactNode } from 'react';
 
-export const ContactFormHandlerContext = createContext<any>(null);
+export const ContactFormHandlerContext = createContext<any | null>(null);
 
-const ContactFormHandler = ({
-  children,
-}: {
+interface ComponentProps {
   children: ReactNode;
-}): JSX.Element => {
+}
+function ContactFormHandler({ children }: ComponentProps): JSX.Element {
   return (
-    <ContactFormHandlerContext.Provider value={{}}>
+    <ContactFormHandlerContext.Provider value={null}>
       {children}
     </ContactFormHandlerContext.Provider>
   );
-};
+}
 
 export default ContactFormHandler;

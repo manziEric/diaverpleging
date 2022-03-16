@@ -1,13 +1,13 @@
-import React, { ReactNode } from 'react';
-import styles from 'styles/form.module.css';
+import { ReactNode } from 'react';
 import useButtonHandler from 'src/components/button/useButtonHandler';
+import styles from 'styles/form.module.css';
 
 interface ComponentProps {
   children: ReactNode;
   route: string;
 }
 
-const Button = ({ children, route }: ComponentProps): JSX.Element => {
+function Button({ children, route }: ComponentProps): JSX.Element {
   const [handleButtonClick] = useButtonHandler();
   return (
     <div className={styles.containerButton}>
@@ -20,6 +20,6 @@ const Button = ({ children, route }: ComponentProps): JSX.Element => {
       </button>
     </div>
   );
-};
+}
 
 export default Button;

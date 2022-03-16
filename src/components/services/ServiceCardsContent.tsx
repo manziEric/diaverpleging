@@ -8,7 +8,7 @@ interface ComponentProps {
   alt: string;
 }
 
-const ServiceCardsContent = ({ image, title, text, alt }: ComponentProps) => {
+function ServiceCardsContent({ image, title, text, alt }: ComponentProps) {
   return (
     <div className={styles.card}>
       <div className={styles.cardCircle}>
@@ -20,6 +20,6 @@ const ServiceCardsContent = ({ image, title, text, alt }: ComponentProps) => {
       </div>
     </div>
   );
-};
+}
 
 export default ServiceCardsContent;

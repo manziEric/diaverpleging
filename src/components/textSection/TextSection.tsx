@@ -1,7 +1,7 @@
 import Button from 'src/components/button';
 import styles from 'styles/serviceSection.module.css';
 
-const TextSection = (): JSX.Element => {
+function TextSection(): JSX.Element {
   return (
     <div className={styles.grid_item}>
       <h2>Je Bent In Zorgende Handen</h2>
@@ -14,6 +14,6 @@ const TextSection = (): JSX.Element => {
       <Button route="/diensten">Leer meer over ons</Button>
     </div>
   );
-};
+}
 
 export default TextSection;

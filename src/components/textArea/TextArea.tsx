@@ -7,12 +7,12 @@ interface ComponentProps {
   placeholder: string;
 }
 
-const TextArea = ({
+function TextArea({
   name,
   rows,
   cols,
   placeholder,
-}: ComponentProps): JSX.Element => {
+}: ComponentProps): JSX.Element {
   return (
     <div className={styles.containertextarea}>
       <textarea
@@ -24,6 +24,6 @@ const TextArea = ({
       />
     </div>
   );
-};
+}
 
 export default TextArea;

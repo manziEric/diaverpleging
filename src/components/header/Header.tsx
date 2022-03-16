@@ -7,10 +7,10 @@ interface ComponentProps {
   isButton: boolean;
 }
 
-const Header = ({ title, tekst, isButton }: ComponentProps): JSX.Element => {
+function Header({ title, tekst, isButton }: ComponentProps): JSX.Element {
   return (
     <div className={styles.container}>
-      <div className={styles.backgroundImage}></div>
+      <div className={styles.backgroundImage} />
       <div className={styles.text}>
         <h1>{title}</h1>
         <p>{tekst}</p>
@@ -18,6 +18,6 @@ const Header = ({ title, tekst, isButton }: ComponentProps): JSX.Element => {
       </div>
     </div>
   );
-};
+}
 
 export default Header;

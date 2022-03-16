@@ -1,9 +1,9 @@
-import { db } from 'src/firebase';
 import { collection, doc, setDoc } from 'firebase/firestore';
 import emailjs from '@emailjs/browser';
+import { db } from 'src/firebase';
 
 const useContactFormHandler = () => {
-  const contactFormHandler = async (e: any, isSubscribe: boolean = false) => {
+  const contactFormHandler = async (e: any, isSubscribe = false) => {
     e.preventDefault();
 
     if (!isSubscribe) {
@@ -23,10 +23,10 @@ const useContactFormHandler = () => {
 
       const newDataRef = doc(collection(db, 'service'));
       await setDoc(newDataRef, postDataToServer);
-      (e.target.Name.value = ''),
-        (e.target.Email.value = ''),
-        (e.target.Phone.value = ''),
-        (e.target.Message.value = '');
+      e.target.Name.value = '';
+      e.target.Email.value = '';
+      e.target.Phone.value = '';
+      e.target.Message.value = '';
     }
 
     if (isSubscribe) {

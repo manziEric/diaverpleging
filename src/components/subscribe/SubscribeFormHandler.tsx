@@ -1,17 +1,17 @@
-import React, { createContext, ReactNode } from "react";
+import { createContext, ReactNode } from 'react';
 
-export const SubscribeFormHandlerContext = createContext<any>(null);
+export const SubscribeFormHandlerContext = createContext<any | null>(null);
 
-const SubscribeFormHandler = ({
-  children,
-}: {
+interface ComponentsProps {
   children: ReactNode;
-}): JSX.Element => {
+}
+
+function SubscribeFormHandler({ children }: ComponentsProps): JSX.Element {
   return (
-    <SubscribeFormHandlerContext.Provider value={{}}>
+    <SubscribeFormHandlerContext.Provider value={null}>
       {children}
     </SubscribeFormHandlerContext.Provider>
   );
-};
+}
 
 export default SubscribeFormHandler;

@@ -1,8 +1,13 @@
-import React, { ReactNode } from 'react';
+import { ReactNode } from 'react';
 import useContactFormHandler from 'src/components/contactForm/useContactFormHandler';
+
 import styles from 'styles/form.module.css';
 
-const SubscribeForm = ({ children }: { children: ReactNode }): JSX.Element => {
+interface ComponentProps {
+  children: ReactNode;
+}
+
+function SubscribeForm({ children }: ComponentProps): JSX.Element {
   const [contactFormHandler] = useContactFormHandler();
 
   return (
@@ -15,6 +20,6 @@ const SubscribeForm = ({ children }: { children: ReactNode }): JSX.Element => {
       </form>
     </div>
   );
-};
+}
 
 export default SubscribeForm;

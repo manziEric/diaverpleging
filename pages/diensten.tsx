@@ -1,15 +1,16 @@
-import serviceCardData from 'src/components/services/serviceCard.data';
-import { name, email, phone, message, submit } from 'utils/formConstants';
 import ContactFormHandler from 'src/components/contactForm/ContactFormHandler';
 import ServiceCardsContent from 'src/components/services/ServiceCardsContent';
+import { name, email, phone, message, submit } from 'utils/formConstants';
+import serviceCardData from 'src/components/services/serviceCard.data';
 import ContactForm from 'src/components/contactForm/ContactForm';
 import ServiceCards from 'src/components/services/ServiceCards';
-import TextArea from 'src/components/contactForm/TextArea';
+import TextArea from 'src/components/textArea/TextArea';
 import Services from 'src/components/services/Services';
-import Input from 'src/components/contactForm/Input';
-import Label from 'src/components/contactForm/Label';
+import Input from 'src/components/input/Input';
+import Label from 'src/components/label/Label';
 import Layout from 'src/components/layout/Layout';
 import styles from 'styles/diensten.module.css';
+
 import inputStyles from 'styles/form.module.css';
 
 function Diensten(): JSX.Element {

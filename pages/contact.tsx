@@ -1,11 +1,12 @@
 import ContactFormHandler from 'src/components/contactForm/ContactFormHandler';
 import { name, email, phone, message, submit } from 'utils/formConstants';
 import ContactForm from 'src/components/contactForm/ContactForm';
-import TextArea from 'src/components/contactForm/TextArea';
-import Input from 'src/components/contactForm/Input';
-import Label from 'src/components/contactForm/Label';
+import TextArea from 'src/components/textArea/TextArea';
+import Input from 'src/components/input/Input';
+import Label from 'src/components/label/Label';
 import Layout from 'src/components/layout/Layout';
 import Header from 'src/components/header/Header';
+
 import inputStyles from 'styles/form.module.css';
 
 function contact(): JSX.Element {

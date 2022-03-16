@@ -1,10 +1,11 @@
-import Image from 'next/image';
-import Link from 'next/link';
 import Button from 'src/components/button';
 import logo from 'assets/Group597.svg';
+import Image from 'next/image';
+import Link from 'next/link';
+
 import styles from 'styles/nav.module.css';
 
-const Navbar = (): JSX.Element => {
+function Navbar(): JSX.Element {
   return (
     <div className={styles.container}>
       <div className={styles.item}>
@@ -30,6 +31,6 @@ const Navbar = (): JSX.Element => {
       </div>
     </div>
   );
-};
+}
 
 export default Navbar;

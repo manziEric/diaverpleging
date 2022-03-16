@@ -1,6 +1,6 @@
-import styles from "styles/midSection.module.css";
+import styles from 'styles/midSection.module.css';
 
-const Tekst = (): JSX.Element => {
+function Tekst(): JSX.Element {
   return (
     <div className={styles.container}>
       <h2>Waarom Dia Verpleging</h2>
@@ -22,6 +22,6 @@ const Tekst = (): JSX.Element => {
       </p>
     </div>
   );
-};
+}
 
 export default Tekst;

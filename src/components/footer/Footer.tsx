@@ -1,12 +1,13 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import logo from 'assets/Group597.svg';
+import Image from 'next/image';
+import Link from 'next/link';
+
 import styles from 'styles/footer.module.css';
 
-const Footer = (): JSX.Element => {
+function Footer(): JSX.Element {
   return (
     <footer className={styles.footer}>
       <div className={styles.row}>
@@ -67,6 +68,6 @@ const Footer = (): JSX.Element => {
       </p>
     </footer>
   );
-};
+}
 
 export default Footer;

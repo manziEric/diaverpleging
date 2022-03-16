@@ -5,12 +5,12 @@ interface ComponentProps {
   inputStyles: any;
 }
 
-const Input = ({
+function Input({
   type,
   name,
   placeholder,
   inputStyles,
-}: ComponentProps): JSX.Element => {
+}: ComponentProps): JSX.Element {
   return (
     <div className={inputStyles.containerInput}>
       <input
@@ -22,6 +22,6 @@ const Input = ({
       />
     </div>
   );
-};
+}
 
 export default Input;
