@@ -50,7 +50,7 @@ const Home: NextPage = () => {
     <Layout>
       <Header
         title={'Thuisverpleging in zorgende handen'}
-        tekst={'Voor meer zorgeloze momenten in je leven.'}
+        tekst={'Meer zorgeloze momenten in je leven.'}
         isButton={true}
       />
       <CoreFeature />
@@ -106,7 +106,7 @@ const Home: NextPage = () => {
         <SubscribeForm>
           <h2>
             Schrijf je in op onze nieuwsbrief en ontvang de laatste weetjes over
-            gezondheid en thuisverpleging.
+            gezondheid in je mailbox.
           </h2>
           <Label name={email} />
           <Input

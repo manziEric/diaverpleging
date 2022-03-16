@@ -47,7 +47,7 @@ const Footer = (): JSX.Element => {
               <Link href="/">Privacy</Link>
             </li>
             <li>
-              <Link href="/">Algemene voorwaarde</Link>
+              <Link href="/">Algemene voorwaarden</Link>
             </li>
           </ul>
         </div>

@@ -51,8 +51,8 @@ const Diensten: NextPage = () => {
       <ContactFormHandler>
         <ContactForm title="Vraag meteen je intakegesprek aan.">
           <h3>
-            Staat jouw zorgbehoefte er niet tussen? Stuur ons eeen bericht en we
-            kijken graag hoe we je kunnen helpen.
+            Vind je jouw zorgebehoefte niet? Stuur ons een bericht en we kijken
+            graag hoe we je kunnen helpen.
           </h3>
           <Label name={name} />
           <Input

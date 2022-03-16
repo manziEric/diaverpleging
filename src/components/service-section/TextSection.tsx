@@ -8,8 +8,8 @@ const TextSection = (): JSX.Element => {
       <p>
         Dia Verpleging bestaat uit verplegers en verpleegsters met jarenlange
         ervaring. Mensen verzorgen doen we hart en ziel. Onze missie? Zorgen dat
-        je je leven zo prettig mogelijk kan leiden. We geloven in de kracht van
-        een hartverwarmende lach en een oprechte babbel.
+        je zo lang mogelijk thuis kan blijven in comfort. Jong, oud, zwart of
+        wit? Onze zorg is voor iedereen.
       </p>
       <Button route="/diensten">Leer meer over ons</Button>
     </div>

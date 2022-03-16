@@ -17,8 +17,8 @@ export const serviceCardData = [
       image2: image2,
       title1: "Hygiënische zorg",
       title2: "Medicatie voorbereiden en toedienen",
-      text1: "Krijg je het lastig met je dagdagelijkse persoonlijke verzorging? We helpen je graag met jezelf wassen, tandenpoetsen, aan- en uitkleden, elastische kousen, prothesen, je bed opmaken als je bedlegerig bent en veel meer. Je zelfstandigheid moedigen we aan. Eventuele zorgbehoeften sporen we op. ",
-      text2: "Wat neem je wanneer in, en hoeveel? Je medicatie juist innemen is belangrijk. We zetten je medicatie klaar of dienen je voorgeschreven inspuitingen toe. We overleggen regelmatig met je huisarts en apotheker voor een correcte opvolging. Zo ben je steeds gerust. ",
+      text1: "Krijg je het lastig met je dagdagelijkse persoonlijke verzorging? We helpen je graag met jezelf wassen, tandenpoetsen, aan- en uitkleden, elastische kousen, prothesen, je bed opmaken als je bedlegerig bent en veel meer. Je zelfstandigheid moedigen we aan. Eventuele zorgbehoeften sporen we op.",
+      text2: "Wat neem je wanneer in, en hoeveel? Je medicatie juist innemen is belangrijk. We zetten je medicatie klaar of dienen je voorgeschreven inspuitingen toe. We overleggen regelmatig met je huisarts en apotheker voor een correcte opvolging. Zo ben je steeds gerust.",
       alt1: "",
       alt2: ""
     },
@@ -28,8 +28,8 @@ export const serviceCardData = [
       image2: image4,
       title1: "Stomazorg",
       title2: "Sondes & Katheters",
-      text1: "Hoe onderhoud je een stoma? Na de operatie verzorgen we de wonde tot de stoma is geheeld. Nadien komen we langs om de stoma schoon te maken en te vervangen. Wil je zelf leren hoe je je stoma behandelt? We leren je graag hoe. ",
-      text2: "Moet er een blaassonde of maagsonde geplaatst worden? Of heb je sondevoeding nodig? We brengen de sonde aan en komen bij je langs voor de verzorging en vervanging. Als het kan, tonen we je hoe je de sonde zelf veilig inbrengt en onderhoudt. ",
+      text1: "Hoe onderhoud je een stoma? Na de operatie verzorgen we de wonde tot de stoma is geheeld. Nadien komen we langs om de stoma schoon te maken en te vervangen. Wil je zelf leren hoe je je stoma behandelt? We leren je graag hoe.",
+      text2: "Moet er een blaassonde of maagsonde geplaatst worden? Of heb je sondevoeding nodig? We brengen de sonde aan en komen bij je langs voor de verzorging en vervanging. Als het kan, tonen we je hoe je de sonde zelf veilig inbrengt en onderhoudt.",
       alt1: "",
       alt2: ""
     },
@@ -50,7 +50,7 @@ export const serviceCardData = [
       image2: image8,
       title1: "Zorg Bij Kanker",
       title2: "Diabetes",
-      text1: "Een kankerdiagnose kan ingrijpend zijn. Onze zorgprofessionals ondersteunen je: chemotherapie opvolgen thuis, hulp bij sondevoeding, pijn-medicatie toedienen, katheterzorg of de verzorging van oncologische wonden. Zit het even niet mee en wil je je hart luchten? Wij staan voor je klaar. ",
+      text1: "Een kankerdiagnose kan ingrijpend zijn. Onze zorgprofessionals ondersteunen je: chemotherapie opvolgen thuis, hulp bij sondevoeding, pijn-medicatie toedienen, katheterzorg of de verzorging van oncologische wonden. Zit het even niet mee en wil je je hart luchten? Wij staan voor je klaar.",
       text2: "Bij diabetes is het belangrijk je medicatie juist in te nemen. We begeleiden je bij de controle van je glycemie, zetten je medicatie klaar en verzorgen een diabetische voet. Hoe je een gezonde levensstijl aanhoudt? We adviseren je graag. Diabetes houdt je niet langer tegen om voluit te leven.",
       alt1: "",
       alt2: ""

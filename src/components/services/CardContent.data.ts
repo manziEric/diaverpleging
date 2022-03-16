@@ -2,7 +2,7 @@ export const CardContentData = [
     {
         id: 1,
         title: "Wondzorg",      
-        text: `Een babbeltje kan zo’n deugd doen. Wil je je even hart luchten? Wij luisteren.  `
+        text: `Heb je een wonde? Klein en eenvoudig, of groot en complex? We helpen je met de verzorging voor een goed herstel.`
     },
     {
         id: 2,
@@ -12,11 +12,11 @@ export const CardContentData = [
     {
         id: 3,
         title: "Palliatieve zorg",      
-        text: `In samenwerking met je familie en andere zorgverleners verlichten we je pijn, terwijl we je comfort zo veel mogelijk verhogen.`
+        text: `In samenwerking met familie en andere zorg- verleners verlichten we je pijn. Je kan zo lang mogelijk thuisblijven.`
     },
     {
         id: 4,
         title: "Incontinetie & darmproblemen",      
-        text: `Ben je belemmerd door urine- of stoelgangverlies? We gaan op zoek naar een geschikte oplossing. `
+        text: `Ben je belemmerd door urine- of stoelgangverlies? We gaan op zoek naar een geschikte oplossing.`
     },
 ]
