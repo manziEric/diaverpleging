@@ -22,3 +22,5 @@
 // TODO: [] Onze Diensten must be a carrousel with left and right arrow
 // TODO: [] Typescript ComponentsProps for only children put it in 1 file and export
 // TODO Hamburger menu on mobile screen
+// TODO: [] Use Tel formating library for FORM => react-number-format
+// TODO: [] Create workflow to run our tests

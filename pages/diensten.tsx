@@ -1,15 +1,15 @@
 import ContactFormHandler from 'src/components/contactForm/ContactFormHandler';
-import ServiceCardsContent from 'src/components/serviceCardsContent/ServiceCardsContent';
 import { name, email, phone, message, submit } from 'utils/formConstants';
 import serviceCardData from 'src/components/services/serviceCard.data';
-import ContactForm from 'src/components/contactForm/ContactForm';
+import ServiceCardsContent from 'src/components/serviceCardsContent';
 import ServiceCards from 'src/components/services/ServiceCards';
-import TextArea from 'src/components/textArea/TextArea';
-import Services from 'src/components/services/Services';
-import Input from 'src/components/input/Input';
-import Label from 'src/components/label/Label';
-import Layout from 'src/components/layout/Layout';
+import ContactForm from 'src/components/contactForm';
 import styles from 'styles/diensten.module.css';
+import TextArea from 'src/components/textArea';
+import Services from 'src/components/services';
+import Input from 'src/components/input';
+import Label from 'src/components/label';
+import Layout from 'src/components/layout';
 
 import inputStyles from 'styles/form.module.css';
 

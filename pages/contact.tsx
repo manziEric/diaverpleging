@@ -1,11 +1,11 @@
 import ContactFormHandler from 'src/components/contactForm/ContactFormHandler';
 import { name, email, phone, message, submit } from 'utils/formConstants';
-import ContactForm from 'src/components/contactForm/ContactForm';
-import TextArea from 'src/components/textArea/TextArea';
-import Input from 'src/components/input/Input';
-import Label from 'src/components/label/Label';
-import Layout from 'src/components/layout/Layout';
-import Header from 'src/components/header/Header';
+import ContactForm from 'src/components/contactForm';
+import TextArea from 'src/components/textArea';
+import Layout from 'src/components/layout';
+import Header from 'src/components/header';
+import Input from 'src/components/input';
+import Label from 'src/components/label';
 
 import inputStyles from 'styles/form.module.css';
 

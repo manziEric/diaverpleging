@@ -4,15 +4,17 @@ import { SvgIconTypeMap } from '@mui/material';
 
 import styles from 'styles/icons.module.css';
 
+interface ComponentsProps {
+  IconSrc: OverridableComponent<SvgIconTypeMap<{}, 'svg'>>;
+  title: string;
+  text: string;
+}
+
 export default function IconsColumn({
   IconSrc,
   title,
   text,
-}: {
-  IconSrc: OverridableComponent<SvgIconTypeMap<{}, 'svg'>>;
-  title: string;
-  text: string;
-}): JSX.Element {
+}: ComponentsProps): JSX.Element {
   return (
     <div>
       <div>

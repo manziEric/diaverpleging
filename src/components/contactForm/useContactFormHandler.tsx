@@ -8,10 +8,10 @@ const useContactFormHandler = () => {
 
     if (!isSubscribe) {
       const postDataToServer = {
-        name: e.target.Name.value,
+        name: e.target.Naam.value,
         email: e.target.Email.value,
-        phone: e.target.Phone.value,
-        message: e.target.Message.value,
+        phone: e.target.Tel.value,
+        message: e.target.Bericht.value,
       };
 
       emailjs.sendForm(
@@ -23,10 +23,10 @@ const useContactFormHandler = () => {
 
       const newDataRef = doc(collection(db, 'service'));
       await setDoc(newDataRef, postDataToServer);
-      e.target.Name.value = '';
+      e.target.Naam.value = '';
       e.target.Email.value = '';
-      e.target.Phone.value = '';
-      e.target.Message.value = '';
+      e.target.Tel.value = '';
+      e.target.Bericht.value = '';
     }
 
     if (isSubscribe) {
