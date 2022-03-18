@@ -21,3 +21,4 @@
 // TODO: [] Remove all the hard codeded tekst from the pages and put in tekst.ts in utils folder
 // TODO: [] Onze Diensten must be a carrousel with left and right arrow
 // TODO: [] Typescript ComponentsProps for only children put it in 1 file and export
+// TODO Hamburger menu on mobile screen

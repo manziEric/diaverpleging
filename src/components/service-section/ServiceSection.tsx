@@ -1,14 +1,14 @@
-import React, { createContext, ReactNode } from "react";
-import styles from "styles/serviceSection.module.css";
+import { createContext, ReactNode } from 'react';
+import styles from 'styles/serviceSection.module.css';
 
-const ServiceSectionContext = createContext<any>(null);
+const ServiceSectionContext = createContext<any | null>(null);
 
-const ServiceSection = ({ children }: { children: ReactNode }) => {
+function ServiceSection({ children }: { children: ReactNode }) {
   return (
-    <ServiceSectionContext.Provider value={{}}>
+    <ServiceSectionContext.Provider value={null}>
       <div className={styles.container}>{children}</div>
     </ServiceSectionContext.Provider>
   );
-};
+}
 
 export default ServiceSection;

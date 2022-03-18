@@ -6,7 +6,7 @@ interface ComponentProps {
   children: ReactNode;
 }
 
-const Card = ({ children }: ComponentProps): JSX.Element => {
+function Card({ children }: ComponentProps): JSX.Element {
   return (
     <div className={styles.container}>
       <h2>Onze Diensten</h2>
@@ -14,6 +14,6 @@ const Card = ({ children }: ComponentProps): JSX.Element => {
       <Button route="/diensten">Ontdek al onze diensten</Button>
     </div>
   );
-};
+}
 
 export default Card;

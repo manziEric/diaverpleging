@@ -1,5 +1,5 @@
 import ContactFormHandler from 'src/components/contactForm/ContactFormHandler';
-import ServiceCardsContent from 'src/components/services/ServiceCardsContent';
+import ServiceCardsContent from 'src/components/serviceCardsContent/ServiceCardsContent';
 import { name, email, phone, message, submit } from 'utils/formConstants';
 import serviceCardData from 'src/components/services/serviceCard.data';
 import ContactForm from 'src/components/contactForm/ContactForm';

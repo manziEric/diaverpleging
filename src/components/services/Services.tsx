@@ -1,11 +1,11 @@
-import React, { createContext, ReactNode } from "react";
+import { createContext, ReactNode } from 'react';
 
-const ServicesContext = createContext<any>(null);
+const ServicesContext = createContext<any | null>(null);
 
-const Services = ({ children }: { children: ReactNode }) => {
+function Services({ children }: { children: ReactNode }) {
   return (
-    <ServicesContext.Provider value={{}}>{children}</ServicesContext.Provider>
+    <ServicesContext.Provider value={null}>{children}</ServicesContext.Provider>
   );
-};
+}
 
 export default Services;
