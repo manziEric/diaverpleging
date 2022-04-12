@@ -64,6 +64,10 @@
   cursor: pointer;
 }
 
+.centerH2{
+  text-align: center;
+}
+
 @media (max-width: 700px) {
   .input,
   .textarea {

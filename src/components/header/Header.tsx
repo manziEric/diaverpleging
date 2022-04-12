@@ -5,12 +5,22 @@ interface ComponentProps {
   title: string;
   tekst: string;
   isButton: boolean;
+  isContact?: boolean;
 }
 
-function Header({ title, tekst, isButton }: ComponentProps): JSX.Element {
+function Header({
+  title,
+  tekst,
+  isButton,
+  isContact = false,
+}: ComponentProps): JSX.Element {
   return (
     <div className={styles.container}>
-      <div className={styles.backgroundImage} />
+      {isContact ? (
+        <div className={styles.backgroundContactImage} />
+      ) : (
+        <div className={styles.backgroundImage} />
+      )}
       <div className={styles.text}>
         <h1>{title}</h1>
         <p>{tekst}</p>
@@ -19,5 +29,7 @@ function Header({ title, tekst, isButton }: ComponentProps): JSX.Element {
     </div>
   );
 }
+
+Header;
 
 export default Header;

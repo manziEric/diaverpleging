@@ -19,9 +19,13 @@ function contact(): JSX.Element {
         Vul het formulier hieronder in voor meer comfort en zorgeloosheid 
         in je dageljkse leven. `}
         isButton={false}
+        isContact
       />
+      <h2 className={inputStyles.centerH2}>
+        Vraag meteen je intakegesprek aan.
+      </h2>
       <ContactFormHandler>
-        <ContactForm title="Vraag meteen je intakegesprek aan.">
+        <ContactForm title="">
           <Label name={name} />
           <Input
             type="text"
