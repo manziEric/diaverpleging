@@ -28,6 +28,7 @@ function Home(): JSX.Element {
         title="Thuisverpleging in zorgende handen"
         tekst="Meer zorgeloze momenten in je leven."
         isButton
+        isContact={false}
       />
       <CoreFeature />
       <Services>

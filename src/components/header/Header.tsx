@@ -5,7 +5,7 @@ interface ComponentProps {
   title: string;
   tekst: string;
   isButton: boolean;
-  isContact?: boolean;
+  isContact: boolean;
 }
 
 function Header({
