@@ -28,11 +28,9 @@
 
 .cardCircle img {
   margin-top: 0 !important;
-  /* min-height: 60% !important; */
 }
 
 .cardContainer .card .content {
-  /* padding: 20px; */
   text-align: center;
 }
 
@@ -53,12 +51,10 @@
 
 .content h5 {
   margin: 0;
-  margin-top: 1rem;
   padding: 0;
 }
 
 .content {
-  margin-top: 1.5rem;
   padding-left: 10px;
   padding-right: 10px;
 }
