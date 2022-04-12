@@ -25,7 +25,7 @@ function contact(): JSX.Element {
         Vraag meteen je intakegesprek aan.
       </h2>
       <ContactFormHandler>
-        <ContactForm title="">
+        <ContactForm title=" ">
           <Label name={name} />
           <Input
             type="text"
