@@ -12,7 +12,7 @@ function Header({
   title,
   tekst,
   isButton,
-  isContact = false,
+  isContact,
 }: ComponentProps): JSX.Element {
   return (
     <div className={styles.container}>
@@ -29,7 +29,5 @@ function Header({
     </div>
   );
 }
-
-Header;
 
 export default Header;
