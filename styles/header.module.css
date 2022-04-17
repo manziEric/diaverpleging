@@ -4,7 +4,7 @@
 }
 
 .backgroundImage {
-  background-image: url('../assets/Decore.svg');
+  background-image: url('../assets/Decore1.svg');
   background-repeat: no-repeat;
   background-position: right;
   min-height: 60rem;
@@ -15,7 +15,7 @@
 }
 
 .backgroundContactImage{
-  background-image: url('../assets/contact/Decore.svg');
+  background-image: url('../assets/contact/Decore1.svg');
   background-repeat: no-repeat;
   background-position: right;
   min-height: 60rem;
