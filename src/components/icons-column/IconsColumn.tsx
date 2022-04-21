@@ -21,7 +21,7 @@ export default function IconsColumn({
         <IconSrc className={styles.icon} />
         <br />
         <h3>{title}</h3>
-        <p>{text}</p>
+        <p className={styles.text}>{text}</p>
       </div>
     </div>
   );
