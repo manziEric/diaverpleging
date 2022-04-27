@@ -10,11 +10,7 @@ interface ComponentsProps {
   text: string;
 }
 
-export default function IconsColumn({
-  IconSrc,
-  title,
-  text,
-}: ComponentsProps): JSX.Element {
+function IconsColumn({ IconSrc, title, text }: ComponentsProps): JSX.Element {
   return (
     <div>
       <div>
@@ -26,3 +22,5 @@ export default function IconsColumn({
     </div>
   );
 }
+
+export default IconsColumn;
