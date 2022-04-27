@@ -18,7 +18,7 @@ function Footer(): JSX.Element {
             alt="logo of diaverpleging"
           />
           <p>
-            Boek een verpleegster in u <br /> buurt in enkele minuten
+            Boek een verpleegster in je <br /> buurt in enkele minuten.
           </p>
           <p className={styles.email}>
             Tel +32 (0) 469 13 36 62 <br /> info@diaverpleging.be
