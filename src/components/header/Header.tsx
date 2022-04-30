@@ -21,6 +21,7 @@ function Header({
       ) : (
         <div className={styles.backgroundImage} />
       )}
+
       <div className={styles.text}>
         <h1>{title}</h1>
         <p>{tekst}</p>
