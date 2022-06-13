@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import Button from 'src/components/button';
 import logo from 'assets/Group597.svg';
 import Image from 'next/image';
@@ -37,7 +38,7 @@ function Navbar(): JSX.Element {
           id="menu-icon"
           name="menu-icon"
         />
-        <label htmlFor="menu-icon"></label>
+        <label htmlFor="menu-icon" />
         <nav className="nav">
           <ul className="pt-5">
             <li>
