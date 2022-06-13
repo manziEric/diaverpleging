@@ -19,6 +19,7 @@ function contact(): JSX.Element {
         Vul het formulier hieronder in voor meer comfort en zorgeloosheid 
         in je dageljkse leven. `}
         isButton={false}
+        address=""
         isContact
       />
       <h2 className={inputStyles.centerH2}>

@@ -4,11 +4,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import styles from 'styles/nav.module.css';
+import { useState } from 'react';
 
 function Navbar(): JSX.Element {
   return (
     <div className={styles.container}>
-      <div className={styles.item}>
+      {/* <div className={styles.item}>
         <div className={styles.logo}>
           <Image src={logo} alt="company logo" />
         </div>
@@ -28,7 +29,60 @@ function Navbar(): JSX.Element {
             <Button route="/contact">Boek Je Afspraak</Button>
           </li>
         </ul>
-      </div>
+       </div> */}
+      <nav className="navbar">
+        <div className={styles.item}>
+          <div className={styles.logo}>
+            <Image src={logo} alt="company logo" />
+          </div>
+        </div>
+
+        <ul className="nav_links">
+          {/* <input type="checkbox" id="checkbox_toggle" />
+          <label htmlFor="checkbox_toggle" className="hamburger">
+            &#9776;
+          </label> */}
+
+          <div className="menu">
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/diensten">Diensten</a>
+            </li>
+            <li>
+              <a href="/contact">Contact</a>
+            </li>
+            <li className={styles.listItem}>
+              <Button route="/contact">Boek Je Afspraak</Button>
+            </li>
+          </div>
+        </ul>
+
+        <input
+          className="menu-icon"
+          type="checkbox"
+          id="menu-icon"
+          name="menu-icon"
+        />
+        <label htmlFor="menu-icon"></label>
+        <nav className="nav">
+          <ul className="pt-5">
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/diensten">Diensten</a>
+            </li>
+            <li>
+              <a href="/contact">Contact</a>
+            </li>
+            <li className={styles.listItem}>
+              <Button route="/contact">Boek Je Afspraak</Button>
+            </li>
+          </ul>
+        </nav>
+      </nav>
     </div>
   );
 }
