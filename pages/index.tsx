@@ -27,7 +27,7 @@ function Home(): JSX.Element {
       <Header
         title="Thuisverpleging in zorgende handen"
         tekst="Meer zorgeloze momenten in je leven"
-        address="Kiel, Hoboken, Aartselaar, Hemiksem, Schelle, Niel, Boom"
+        address="Regio Kiel, Hoboken, Aartselaar, Hemiksem, Schelle, Niel, Boom"
         isButton
         isContact={false}
       />
