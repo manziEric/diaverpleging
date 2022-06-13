@@ -6,6 +6,7 @@ interface ComponentProps {
   tekst: string;
   isButton: boolean;
   isContact: boolean;
+  address: string;
 }
 
 function Header({
@@ -13,6 +14,7 @@ function Header({
   tekst,
   isButton,
   isContact,
+  address,
 }: ComponentProps): JSX.Element {
   return (
     <div className={styles.container}>
@@ -25,6 +27,7 @@ function Header({
       <div className={styles.text}>
         <h1>{title}</h1>
         <p>{tekst}</p>
+        <p className={styles.textAboveButton}>{address}</p>
         {isButton ? <Button route="/contact">Boek je afspraak</Button> : null}
       </div>
     </div>

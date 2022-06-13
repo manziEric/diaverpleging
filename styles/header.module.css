@@ -32,9 +32,15 @@
   right: 5rem;
 }
 
+
 .text p {
-  margin-bottom: 2rem;
+  margin: 0;
   max-width: 40rem;
+}
+
+.textAboveButton{
+  margin-bottom: 2rem !important;
+
 }
 
 @media screen and (max-width: 480px) {

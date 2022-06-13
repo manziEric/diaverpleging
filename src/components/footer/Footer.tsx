@@ -1,6 +1,5 @@
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
 import logo from 'assets/Group597.svg';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -56,7 +55,6 @@ function Footer(): JSX.Element {
           <h3>Volg ons op</h3>
           <FacebookIcon className={styles.icon} />
           <InstagramIcon className={styles.icon} />
-          <TwitterIcon className={styles.icon} />
         </div>
       </div>
       <p className={styles.copyright}>

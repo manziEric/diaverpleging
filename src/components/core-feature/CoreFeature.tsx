@@ -5,7 +5,7 @@ import styles from 'styles/icons.module.css';
 function CoreFeature(): JSX.Element {
   return (
     <div className={styles.container}>
-      <h2>Waarom Dia Verpleging</h2>
+      <h2>Waarom Dia Verpleging?</h2>
       <div className={styles.grid}>
         {data.map(({ id, IconSrc, title, text }) => (
           <IconsColumn key={id} IconSrc={IconSrc} title={title} text={text} />

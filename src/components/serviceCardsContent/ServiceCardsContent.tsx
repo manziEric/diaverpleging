@@ -15,7 +15,7 @@ function ServiceCardsContent({ image, title, text, alt }: ComponentProps) {
         <Image src={image} alt={alt} />
       </div>
       <div className={styles.content}>
-        <h5>{title}</h5>
+        <h4>{title}</h4>
         <p>{text}</p>
       </div>
     </div>
