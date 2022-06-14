@@ -4,6 +4,7 @@ import logo from 'assets/Group597.svg';
 import Image from 'next/image';
 
 import styles from 'styles/nav.module.css';
+import Link from 'next/link';
 
 function Navbar(): JSX.Element {
   return (
@@ -18,13 +19,13 @@ function Navbar(): JSX.Element {
         <ul className="nav_links">
           <div className="menu">
             <li>
-              <a href="/">Home</a>
+              <Link href="/">Home</Link>
             </li>
             <li>
-              <a href="/diensten">Diensten</a>
+              <Link href="/diensten">Diensten</Link>
             </li>
             <li>
-              <a href="/contact">Contact</a>
+              <Link href="/contact">Contact</Link>
             </li>
             <li className={styles.listItem}>
               <Button route="/contact">Boek Je Afspraak</Button>

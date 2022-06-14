@@ -1,6 +1,4 @@
 .container {
-  /* height: 100px; */
-  /* padding: 0px 50px; */
   background-color: transparent;
   display: flex;
   align-items: center;
@@ -16,6 +14,7 @@
   align-items: center;
   margin-left: 2rem;
 }
+
 @media (max-width: 768px) {
   .item {
     flex: 1;
@@ -24,6 +23,11 @@
     margin-top: 2rem;
     margin-left: 2rem;
   }
+
+  /* .logo {
+    top: 2rem;
+    position: fixed;
+  } */
 }
 
 .item:nth-child(2) {
@@ -44,7 +48,6 @@
 }
 
 .listItem {
-  /* margin: 20px; */
   font-weight: 500;
   line-height: 2rem;
   vertical-align: center;

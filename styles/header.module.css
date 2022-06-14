@@ -47,4 +47,30 @@
   .textImage {
     top: 2rem;
   }
+
+  .backgroundImage {
+    background-image: url('../assets/Decore.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    min-height: 60rem;
+    position: absolute;
+    top: -20rem;
+    right: -2.5rem !important;
+    left: 0;
+  }
 }
+
+@media (max-width: 1170px) {
+  .backgroundImage{
+    background-image: url('../assets/contact/Decore.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    min-height: 60rem;
+    position: absolute;
+    top: -20rem;
+    right: -5rem;
+    left: 0;
+  }
+}
+
+
