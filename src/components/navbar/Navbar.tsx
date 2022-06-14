@@ -28,7 +28,7 @@ function Navbar(): JSX.Element {
               <Link href="/contact">Contact</Link>
             </li>
             <li className={styles.listItem}>
-              <Button route="/contact">Boek Je Afspraak</Button>
+              <Button route="/afspraak">Boek Je Afspraak</Button>
             </li>
           </div>
         </ul>
@@ -52,7 +52,7 @@ function Navbar(): JSX.Element {
               <a href="/contact">Contact</a>
             </li>
             <li className={styles.listItem}>
-              <Button route="/contact">Boek Je Afspraak</Button>
+              <Button route="/afspraak">Boek Je Afspraak</Button>
             </li>
           </ul>
         </nav>

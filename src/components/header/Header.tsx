@@ -28,7 +28,7 @@ function Header({
         <h1>{title}</h1>
         <p>{tekst}</p>
         <p className={styles.textAboveButton}>{address}</p>
-        {isButton ? <Button route="/contact">Boek je afspraak</Button> : null}
+        {isButton ? <Button route="/afspraak">Boek je afspraak</Button> : null}
       </div>
     </div>
   );
